@@ -16,7 +16,7 @@ tar -xf ${SRC_DIR}/${BUILD_TARGET}.tar.* -C ${BUILD_DIR}
 
 buildTarget(){
 cd ${BUILD_DIR}/${BUILD_TARGET}
-if [ $REINSTALLED_FLAG -eq 0 ]; then
+if [ $REINSTALL_FLAG -eq 0 ]; then
 groupadd -fg 84 avahi &&
 useradd -c "Avahi Daemon Owner" -d /var/run/avahi-daemon -u 84 \
         -g avahi -s /bin/false avahi

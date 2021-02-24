@@ -16,7 +16,7 @@ tar -xf ${SRC_DIR}/${BUILD_TARGET}.tar.* -C ${BUILD_DIR}
 
 buildTarget(){
 cd ${BUILD_DIR}/${BUILD_TARGET}
-if [ $REINSTALLED_LOG -eq 0 ]; then
+if [ $REINSTALL_FLAG -eq 0 ]; then
 groupadd -fg 27 polkitd &&
 useradd -c "PolicyKit Daemon Owner" -d /etc/polkit-1 -u 27 \
         -g polkitd -s /bin/false polkitd
