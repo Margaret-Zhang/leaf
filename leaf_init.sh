@@ -15,5 +15,3 @@ EOF
 
 echo "Run 'source /etc/profile' to update configurations."
 
-exit
-
